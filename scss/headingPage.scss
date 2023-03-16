@@ -1,11 +1,16 @@
+//variables
 $text-color: #ffffff;
 $background-color: #000000;
 $main-font: Nunito;
+
+//font load
 @font-face {
     font-family: Nunito;
     src: url(../fonts/Nunito-c/Nunito-Regular.ttf);
 }
-*{
+
+//nulifying default styles
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -14,17 +19,21 @@ $main-font: Nunito;
 .main-header {
     background-color: $background-color;
     font-family: $main-font;
+    color: $text-color;
     min-height: 100vh;
     min-width: 100%;
+    padding: 1vh 2.5vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-header__top-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vh 2vw;
 }
 
+//logo block
 .logo {
     display: inline-block;
 }
@@ -33,34 +42,61 @@ $main-font: Nunito;
     width: auto;
     display: inline-block;
 }
-
+//logo main-header modification
 .main-header__logo {
     height: 15vh;
-    & .logo__img {
-
-    }
 }
 
+//menu block
 .menu {
     display: flex;
 }
-
 .menu__list {
     list-style-type: none;
     display: flex;
 }
-.menu__list-item {
-
+.menu__link {
+    text-decoration: none;
+    color: $text-color;
 }
-
+//menu main-header modification
 .main-header__menu {
     & .menu__list {
         gap: 2vw
     }
 }
 
-.menu__link {
-    text-decoration: none;
-    color: $text-color;
+.main-header__content-wrapper {
+    display: flex;
+    flex-grow: 1;
+    padding: 0 1vw;
 }
 
+.main-header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-header__content-header {
+    font-size: 3rem;
+    letter-spacing: .5px;
+    margin: 25px 0 25px;
+}
+
+.main-header__content-text {
+    line-height: 1.5;
+    margin: 0 0 25px;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+}
+
+.main-header__content-button {
+    align-self: start;
+    margin: 0 0 25px;
+    background-color: $background-color;
+    color: $text-color;
+    border: 1px solid $text-color;
+    padding: 5px 10px;
+    letter-spacing: .5px;
+}
