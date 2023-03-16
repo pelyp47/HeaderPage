@@ -89,7 +89,12 @@
   color: #ffffff;
   border: 1px solid #ffffff;
   padding: 5px 10px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
+  box-shadow: 0px 0px 0px 0px #ffffff;
+  transition: box-shadow 0.4s;
+}
+.main-header__content-button:hover {
+  box-shadow: 0px 0px 12px 0.5px #ffffff;
 }
 
 /*# sourceMappingURL=headingPage.css.map */
