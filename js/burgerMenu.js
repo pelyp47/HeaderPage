@@ -1,7 +1,9 @@
-if (window.matchMedia("(max-width: 540px)").matches) {
-    
+const root = document.documentElement;
+const burgeMenuAppearWidth = getComputedStyle(root).getPropertyValue('--burger-menu-appear-width');
+
+if (window.matchMedia(`(max-width: ${burgeMenuAppearWidth})`).matches) {
+
     const menuBtn = document.querySelector(".menu-btn")
-    const menu = document.querySelector(".menu")
 
     let menuStatus = "hidden"
 

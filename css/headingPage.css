@@ -1,3 +1,7 @@
+:root {
+  --burger-menu-appear-width: 540px;
+}
+
 @font-face {
   font-family: Nunito;
   src: url(../fonts/Nunito-c/Nunito-Regular.ttf);
@@ -46,7 +50,6 @@
 
 .menu {
   display: flex;
-  width: auto;
 }
 
 .menu__list {

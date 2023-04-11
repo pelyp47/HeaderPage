@@ -2,6 +2,12 @@
 $text-color: #ffffff;
 $background-color: #000000;
 $main-font: Nunito;
+$burger-menu-appear-width: 540px;
+
+:root {
+    //to acces this var in burgerMenu.js
+    --burger-menu-appear-width: #{$burger-menu-appear-width};
+}
 
 //font load
 @font-face {
@@ -125,7 +131,7 @@ $main-font: Nunito;
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: $burger-menu-appear-width) {
     .main-header__content-header {
         font-size: 1.75rem;
     }
