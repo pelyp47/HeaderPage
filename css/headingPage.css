@@ -46,6 +46,7 @@
 
 .menu {
   display: flex;
+  width: auto;
 }
 
 .menu__list {
@@ -55,22 +56,6 @@
 
 .menu__list-item {
   position: relative;
-}
-
-.menu__list-item::before {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  background-color: #ffffff;
-  bottom: 0;
-  right: 0;
-  transition: width 0.3s;
-}
-
-.menu__list-item:hover::before {
-  width: 100%;
-  left: 0;
 }
 
 .menu__link {
