@@ -68,9 +68,12 @@ $burger-menu-appear-width: 540px;
 }
 .menu__list-item {
     position: relative;
+    
 }
 .menu__link {
     text-decoration: none;
+    padding: 5px;
+    display: block;
     color: $text-color;
 }
 //menu main-header modification

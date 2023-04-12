@@ -63,6 +63,8 @@
 
 .menu__link {
   text-decoration: none;
+  padding: 5px;
+  display: block;
   color: #ffffff;
 }
 
